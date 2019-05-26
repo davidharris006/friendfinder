@@ -8,9 +8,150 @@
     <title>Survey</title>
 </head>
 <body>
-    
-<form method="post">
-    <input type="text" id="q1">
+    <h1>About You:</h1>
+<form action="/api/friends" method="POST">
+    <label for="name">Please type your Name:</label>
+
+    <input type="text" name="usersname"><br>
+
+    <label for="photo">Please sumbit a link to a photo representing you:</label>
+    <input type="text" name="photo"><br>
+
+    <!-- <h2>Survey:</h2> -->
+
+    <label for="question1">You want to travel in your life:</label>
+    <select class="form-control" id="question1">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question2">You are a socail person:</label>
+    <select class="form-control" id="question2">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question3">You like to try new things:</label>
+    <select class="form-control" id="question3">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+          
+    <label for="question4">You like dogs over cats:</label>
+    <select class="form-control" id="question4">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question5">You are an active person:</label>
+    <select class="form-control" id="question5">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question6">You think education is important:</label>
+    <select class="form-control" id="question6">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question7">You are looking for a relationship:</label>
+    <select class="form-control" id="question7">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question8">Like super Hero movies</label>
+    <select class="form-control" id="question8">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question9">You like videogames:</label>
+    <select class="form-control" id="question9">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+    <label for="question10">You like sports:</label>
+    <select class="form-control" id="question10">
+            <option>Please select value</option>
+            <option>5(Strongly Agree)</option>
+            <option>4</option>
+            <option>3</option>
+            <option>2</option>
+            <option>1(Disagree completly)</option>
+          </select>
+
+          <button type="submit">submit</button>
+
 </form>
+
+<!-- <script>
+
+$( document ).ready(function() {
+               
+    $(".submit").on("click", function(event){
+                    event.preventDefault();
+                    let newFriend = {};
+                    newFriend.Name = $("#name").val();
+                    newFriend.Photo = $("photo").val();
+                    newFriend.q1 = $("#question1").val();
+                    newFriend.q2 = $("#question2").val();
+                    newFriend.q2 = $("#question3").val();
+                    newFriend.q2 = $("#question4").val();
+                    newFriend.q2 = $("#question5").val();
+                    newFriend.q2 = $("#question6").val();
+                    newFriend.q2 = $("#question7").val();
+                    newFriend.q2 = $("#question8").val();
+                    newFriend.q2 = $("#question9").val();
+                    newFriend.q2 = $("#question10").val();
+
+                     
+                $.post("/api/friends", newFriend)
+                .then(function(data) {
+                console.log(data);
+                });
+        
+        });
+});
+
+</script> -->
 </body>
 </html>
